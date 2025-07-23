@@ -6,7 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < botones.length; i++) {
         botones[i].addEventListener("click", function() {
             
-            if(botones[i].value === "=") resultado.innerHTML = eval(resultado.innerHTML);
+            if(resultado.textContent === "ERROR MATH") {
+                resultado.textContent = ""
+                resultado.innerHTML += botones[i].value;
+           
+            } else if(botones[i].value === "=") {
+                resultado.textContent = eval(resultado.textContent);
+                if(resultado.textContent === "Infinity") resultado.textContent = "ERROR MATH";
+            }
             
             else if(botones[i].value === "reiniciar") resultado.innerHTML = "";
 
