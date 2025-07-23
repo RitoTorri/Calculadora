@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor principal de la calculadora */
+#Calculadora {
+    width: 90%;
+    max-width: 300px; /* Más delgado que la versión anterior */
+    background-color: #2c3e50;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Área de resultado */
+#Resultado {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    min-height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#Valores {
+    margin: 0;
+    font-size: 1.8rem; /* Tamaño de fuente ligeramente reducido */
+    color: #2c3e50;
+}
+
+/* Contenedor de botones - ahora 3 columnas */
+#Botones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en lugar de 4 */
+    gap: 8px;
+}
+
+/* Estilos para los botones */
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0; /* Padding ligeramente reducido */
+    font-size: 1.3rem; /* Tamaño de fuente reducido */
+    cursor: pointer;
+    background-color: #34495e;
+    color: white;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #3d566e;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Estilos específicos para botones de operaciones */
+.btn[value="+"],
+.btn[value="-"],
+.btn[value="*"],
+.btn[value="/"],
+.btn[value="="],
+.btn[value="%"] {
+    background-color: #3498db;
+}
+
+.btn[value="+"]:hover,
+.btn[value="-"]:hover,
+.btn[value="*"]:hover,
+.btn[value="/"]:hover,
+.btn[value="="]:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para botones especiales */
+.btn[value="borrar"],
+.btn[value="reiniciar"] {
+    background-color: #e74c3c;
+}
+
+.btn[value="borrar"]:hover,
+.btn[value="reiniciar"]:hover {
+    background-color: #c0392b;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    #Calculadora {
+        width: 95%;
+        padding: 12px;
+    }
+    
+    #Valores {
+        font-size: 1.4rem;
+    }
+    
+    .btn {
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (ej. smartphones pequeños) */
+@media (max-width: 320px) {
+    #Botones {
+        gap: 5px;
+    }
+    
+    .btn {
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+}
