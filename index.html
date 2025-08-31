@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="stylees.css">
     <title>MiniProyecto - Calculadora</title>
 </head>
+
 <body>
     <main id="Calculadora">
         <section id="Resultado">
@@ -14,27 +16,40 @@
         </section>
 
         <section id="Botones">
-            <button value="1" class="btn">1</button>
-            <button value="2" class="btn">2</button>
-            <button value="3" class="btn">3</button>
-            <button value="4" class="btn">4</button>
-            <button value="5" class="btn">5</button>
-            <button value="6" class="btn">6</button>
-            <button value="7" class="btn">7</button>
-            <button value="8" class="btn">8</button>
-            <button value="9" class="btn">9</button>
-            <button value="0" class="btn">0</button>
             <button value="+" class="btn">+</button>
             <button value="-" class="btn">-</button>
             <button value="*" class="btn">*</button>
             <button value="/" class="btn">/</button>
-            <button value="%" class="btn">%</button>      
-            <button value="=" class="btn">=</button>
-            <button value="borrar" class="btn">DEL</button>
+
+            <button value="1" class="btn">1</button>
+            <button value="2" class="btn">2</button>
+            <button value="3" class="btn">3</button>
+            <button value="%" class="btn">%</button>
+
+            <button value="4" class="btn">4</button>
+            <button value="5" class="btn">5</button>
+            <button value="6" class="btn">6</button>
             <button value="reiniciar" class="btn">AC</button>
+
+            <button value="7" class="btn">7</button>
+            <button value="8" class="btn">8</button>
+            <button value="9" class="btn">9</button>
+            <button value="borrar" class="btn">DEL</button>
+
+            <div id="ultima-fila">
+                <button id="git"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </button>
+                <button value="0" class="btn">0</button>
+                <button value="=" class="btn">=</button>
+            </div>
         </section>
     </main>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
